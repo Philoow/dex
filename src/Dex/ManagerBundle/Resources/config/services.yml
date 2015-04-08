@@ -1,0 +1,6 @@
+services:
+    dex_login_success_handler:
+        class:  Dex\ManagerBundle\Component\Authentication\Handler\LoginSuccessHandler
+        arguments:  [@router, @security.context]
+        tags:
+            - { name: 'monolog.logger', channel: 'security' }

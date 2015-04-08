@@ -1,0 +1,10 @@
+dex_admin:
+    pattern: /admin
+
+dex_root:
+    pattern:     /
+    defaults: { _controller: DexManagerBundle:Page:login }
+
+dex_home:
+    pattern:     /
+    defaults: { _controller: DexManagerBundle:Page:home }
